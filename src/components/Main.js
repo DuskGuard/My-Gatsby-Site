@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import pic01 from '../images/pic01.jpg'
-import pic02 from '../images/pic02.jpg'
-import pic03 from '../images/pic03.jpg'
+import cal from '../images/cal.jpg'
+import rain from '../images/rain.png'
+import code from '../images/code.png'
 
 class Main extends React.Component {
   render() {
@@ -15,25 +15,37 @@ class Main extends React.Component {
 
         <article id="about" className={`${this.props.article === 'about' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">About</h2>
-          <span className="image main"><img src={pic03} alt="" /></span>
-          <p>Lorem AY ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
-          <p>By the way, check out my <a href="#work">awesome work</a></p>
+          <span className="image main"><img src={cal} alt="" /></span>
+           <p> I am a Full-Stack Development Student from the Locally-Renowned <a href="https://www.evolveu.ca/about">Evolve-U</a> program located in Calgary. 
+             I come from backgrounds in Private Investigations and Mental Health, with Entrupenurial Experience in Operating my own Business.
+              At 20 Years Old i have Accomplished alot from Founding my own Company "On-The-Spot Detailing" in YYC/Okotoks to Beating Stage-3 Colorectal Cancer 
+              during my High-School Career; Persistance and Ambition go hand-in-hand for me. I am Eager to Learn and Even More Eager to Contribute to a Team who
+              wants to make a Genuine & Positive Differnce in people's lives and Alberta as a whole.</p>
+              <p>To Find Out More About Me Check Out My <a href="https://www.linkedin.com/in/trent-apt/">LinkedIn Account</a></p>
           {close}
         </article>
 
         <article id="work" className={`${this.props.article === 'work' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Work</h2>
-          <span className="image main"><img src={pic02} alt="" /></span>
-          <p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-          <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
+          <span className="image main"><img src={code} alt="" /></span>
+          <p> Prior to <a href="https://www.evolveu.ca/about">Evolve-U</a> i had some Minor Wordpress Experience and Basic Graphic-Design Experience, but nothing else. Whereas Compared to the Present Day where I 
+            have an intermediate understanding of HTML 5, CSS, Vanilla JavaScript and React with an adept understanding of Python and Gatsby. I have designed 
+            all of my Projects Using Sketching and Wireframes to Conceptualize my Design Ideas. I hope to be able to bring a Strong Design aspect to the team 
+            coupled with my Creative Problem-Solving Skills and Solid Technical Capabilities, it's worth noting that i work best in an Agile Work Environment 
+            with an Enthusiastic Team Supporting me. </p>
+            <p>To See Some of My Work Check Out My <a href="https://github.com/DuskGuard">  Git-Hub Account!</a></p>
           {close}
         </article>
 
         <article id="rainforest" className={`${this.props.article === 'rainforest' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
-          <h2 className="major">Rainforest</h2>
-          <span className="image main"><img src={pic01} alt="" /></span>
-          <p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
+          <h2 className="major">Rainforest Alberta</h2>
+          <span className="image main"><img src={rain} alt="" /></span>
+          <p>As an Entrepenur myself I Strongly believe in what the Alberta Rainforest is trying to do in Calgary. I am YYC Born Myself and I Believe that
+           Calgary is Entering the Golden-Age of Economic Diversity, but That is Only Possible if Everyone does Their Part to Contribute. Ideally I Would Like to be a part 
+           of/found an Initative to Help At-Risk Youth who've been Through Tramatic Experiences back on The Path That They are Meant to be on, Rather than The Path they are Currently on.
+           But at the core i believe that Calgary has alot of Potential for Cultural and Technological Growth and I Will Happilly do My Part to Make That Vision a Reality.
+          </p>
+          <p>If You Havent Already, Sign<a href="https://www.rainforestab.ca/"> The Social Contract!</a></p>
           {close}
         </article>
 
@@ -58,10 +70,9 @@ class Main extends React.Component {
             </ul>
           </form>
           <ul className="icons">
-            <li><a href="#" className="icon fa-twitter"><span className="label">Twitter</span></a></li>
-            <li><a href="#" className="icon fa-facebook"><span className="label">Facebook</span></a></li>
-            <li><a href="#" className="icon fa-instagram"><span className="label">Instagram</span></a></li>
-            <li><a href="#" className="icon fa-github"><span className="label">GitHub</span></a></li>
+            <li><a href="https://www.linkedin.com/in/trent-apt/" className="icon fa-linkedin"><span className="label">LinkedIn</span></a></li>
+            <li><a href="https://www.instagram.com/prettygood_guy/" className="icon fa-instagram"><span className="label">Instagram</span></a></li>
+            <li><a href="https://github.com/DuskGuard" className="icon fa-github"><span className="label">GitHub</span></a></li>
           </ul>
           {close}
         </article>
